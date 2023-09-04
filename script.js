@@ -31,7 +31,6 @@ function toggleOffMenu() {
     const btnMenu = document.getElementsByClassName("btn-menu");
     const body = document.getElementsByTagName("body")[0];
     const blurBg = document.getElementsByClassName("menu-bg-blur")[0];
-    alert('here')
     
     if (menuContainers.length > 0) {
         menuContainers[0].style.display = "none";
