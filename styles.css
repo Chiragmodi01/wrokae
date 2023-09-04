@@ -91,7 +91,7 @@ body {
     width: 100%;
 }
 .menu-bg-blur {
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     opacity: 50%;
     position: absolute;
