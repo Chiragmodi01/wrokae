@@ -631,12 +631,21 @@ section .content-container .text-container .subheading {
 }
 
 @media only screen and (max-width: 700px) {
+    .section-10 .form-container .input-wrapper {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+    }
 	.right-aligned:not(:nth-child(1)):not(:nth-child(10)) {
 		padding-left: 0;
 	}
 	.left-aligned {
 		padding-right: 0;
 	}
+    .footer {
+        padding: 5rem 4rem;
+        padding-bottom: 2rem;
+    }
 	.section-4 .content-container {
 		padding: 2rem 4rem;
 	}
@@ -644,6 +653,9 @@ section .content-container .text-container .subheading {
 		padding: 0;
 		padding-right: 4rem !important;
 	}
+    section .section-10 {
+        padding: 4rem 4rem;
+    }
 	.section-5 .content-container .text-container .subheading {
 		width: 100%;
 	}
@@ -669,7 +681,7 @@ section .content-container .text-container .subheading {
 		width: 100% !important;
 	}
 	.footer .brand-name {
-		font-size: 13vw;
+		font-size: 16vw;
 	}
 }
 
@@ -681,9 +693,28 @@ section .content-container .text-container .subheading {
     section {
         padding: 5rem 2rem;
     }
+    .footer {
+        padding: 5rem 2rem;
+        padding-bottom: 2rem;
+    }
     section .content-container {
         padding: 0 2rem !important;
     }
+    section .section-4 .content-container{
+        padding: 4rem;
+    }
+    section .section-10 {
+        padding: 4rem 2rem;
+    }
+
+    section .section-10 .section-content .content-container {
+        padding: 0 !important;
+    }
+
+    section .section-10 .section-content .content-container .text-container {
+        padding: 0 !important;
+    }
+    
 
     section .section-5 .content-container {
         padding-right: 2rem !important;
@@ -743,7 +774,7 @@ section .content-container .text-container .subheading {
         height: 20rem;
     }
 	.footer .brand-name {
-		font-size: 11vw;
+		font-size: 15vw;
 	}
 	.section-4 .content-container .text-container .heading {
 		font-size: 2.5rem;
