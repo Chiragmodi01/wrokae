@@ -702,6 +702,9 @@ section .content-container .text-container .subheading {
 		padding: 5rem 4rem !important;
 		flex-wrap: wrap;
 	}
+		.section-10 .content-container {
+		padding-right: 0;
+	}
 	section .content-container {
 		padding: 0 4rem;
 		width: 100% !important;
@@ -797,6 +800,10 @@ section .content-container .text-container .subheading {
         width: 2rem;
         height: 21rem;
     }
+	.section-10 .form-container .input-wrapper .input-field {
+		width: auto;
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
