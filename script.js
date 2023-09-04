@@ -1,34 +1,54 @@
-function toggleOnMenu () {
-    const menuContainer = document.getElementsByClassName("ham-menu-container");
+function toggleOnMenu() {
+    const menuContainers = document.getElementsByClassName("ham-nav-pills-container");
     const btnClose = document.getElementsByClassName("btn-close");
     const btnMenu = document.getElementsByClassName("btn-menu");
-    const body = document.getElementsByTagName("body");
-    alert('on')
+    const body = document.getElementsByTagName("body")[0];
+    const blurBg = document.getElementsByClassName("menu-bg-blur")[0];
+    
+    if (menuContainers.length > 0) {
+        menuContainers[0].style.display = "flex";
+    }
+    if (btnClose.length > 0) {
+        btnClose[0].style.display = "block";
+    }
+    if (btnMenu.length > 0) {
+        btnMenu[0].style.display = "none";
+    }
+    if (blurBg) {
+        blurBg.style.display = "block";
+    }
 
-    menuContainer.style.display = "none";
-    btnClose.style.display = "block";
-    btnMenu.style.display = "none";
-
-    body.style.opacity = "60%";
-    body.style.filter = "blur(1px)";
-    body.style.overflow = "hidden";
-    body.style.height = "100vh";
+    if (body) {
+        body.style.overflow = "hidden";
+        body.style.height = "100vh";
+    }
 }
 
 
-function toggleOffMenu () {
-    const menuContainer = document.getElementsByClassName("ham-menu-container");
-    const btnClose = document.getElementsByClassName("icone-close");
-    const btnMenu = document.getElementsByClassName("icone-menu");
-    const body = document.getElementsByTagName("body");
-    alert('off')
+function toggleOffMenu() {
+    const menuContainers = document.getElementsByClassName("ham-nav-pills-container");
+    const btnClose = document.getElementsByClassName("btn-close");
+    const btnMenu = document.getElementsByClassName("btn-menu");
+    const body = document.getElementsByTagName("body")[0];
+    const blurBg = document.getElementsByClassName("menu-bg-blur")[0];
+    alert('here')
+    
+    if (menuContainers.length > 0) {
+        menuContainers[0].style.display = "none";
+    }
+    if (btnClose.length > 0) {
+        btnClose[0].style.display = "none";
+    }
+    if (btnMenu.length > 0) {
+        btnMenu[0].style.display = "block";
+    }
 
-    menuContainer.style.display = "flex";
-    btnClose.style.display = "none";
-    btnMenu.style.display = "block";
+    if (blurBg) {
+        blurBg.style.display = "none";
+    }
 
-    body.style.opacity = "100%";
-    body.style.filter = "none";
-    body.style.overflow = "auto";
-    body.style.height = "100vh";
+    if (body) {
+        body.style.overflow = "auto";
+        body.style.height = "100vh";
+    }
 }

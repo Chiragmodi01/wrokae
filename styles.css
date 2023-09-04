@@ -75,6 +75,7 @@ body {
 	justify-content: space-between;
 	height: 3rem;
 	padding-top: 1rem;
+    z-index: 200;
 }
 
 .hero .navbar.navbar-mobile {
@@ -89,22 +90,37 @@ body {
     left: 0;
     width: 100%;
 }
-.hero .navbar.navbar-mobile .ham-menu-container .nav-pills-container{
-    display: flex;
+.menu-bg-blur {
+    height: 100vh;
+    width: 100vw;
+    opacity: 50%;
+    position: absolute;
+    background-color: var(--primary);
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.hero .navbar.navbar-mobile .ham-menu-container {
+    z-index: 200;
+}
+.hero .navbar.navbar-mobile .ham-menu-container .ham-nav-pills-container {
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     margin: 0;
     background-color: white;
     overflow: hidden;
     gap: 0.5rem 0;
+    z-index: 200;
 }
-.hero .navbar.navbar-mobile .ham-menu-container .nav-pills-container .nav-pill{
-    padding: 0.5rem 2rem;
+.hero .navbar.navbar-mobile .ham-menu-container .ham-nav-pills-container .nav-pill{
+    padding: 0.8rem 2rem;
     width: 100%;
 }
-.hero .navbar.navbar-mobile .ham-menu-container .nav-pills-container .nav-pill:hover{
+.hero .navbar.navbar-mobile .ham-menu-container .ham-nav-pills-container .nav-pill:hover{
     color: var(--primary);
     background-color: var(--secondary);
 }
