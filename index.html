@@ -8,9 +8,11 @@
 	</head>
 	<body>
 		<div class="hero bg-light">
-			<navbar class="navbar">
+			<navbar class="navbar navbar-desktop">
 				<div class="brand-logo-container">
-					<img class="brand-logo" src="/assets/logo.png" alt="brand-logo">
+					<a href="/">
+						<img class="brand-logo" src="/assets/logo.png" alt="brand-logo">
+					</a>
 				</div>
 				<ul class="nav-pills-container font-w400">
 					<li class="nav-pill">
@@ -23,6 +25,36 @@
 						<a class="nav-pill-link" href="/">contact</a>
 					</li>
 				</ul>
+			</navbar>
+			<navbar class="navbar navbar-mobile">
+				<div class="ham-menu-icon">
+					<div class="menu-btn-container">
+						<button class="btn-menu" onclick="toggleOnMenu()">
+							<img class="icon-menu" src="/assets/hamburger-menu.svg" alt="">
+						</button>
+						<button class="btn-close" onclick="toggleOffMenu()">
+							<img class="icon-close" src="/assets/close-menu.svg" alt="">
+						</button>
+					</div>
+				</div>
+				<div class="ham-menu-container">
+					<ul class="nav-pills-container font-w400">
+						<li class="nav-pill" onclick="toggleOffMenu()">
+							<a class="nav-pill-link" href="/">about</a>
+						</li>
+						<li class="nav-pill" onclick="toggleOffMenu()">
+							<a class="nav-pill-link" href="/">services</a>
+						</li>
+						<li class="nav-pill" onclick="toggleOffMenu()">
+							<a class="nav-pill-link" href="/">contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="brand-logo-container">
+					<a href="/">
+						<img class="brand-logo" src="/assets/logo.png" alt="brand-logo">
+					</a>
+				</div>
 			</navbar>
 			<div class="hero-main-container">
 				<div class="heading-container">
@@ -308,5 +340,7 @@
 			</div>
 			<div class="brand-name font-accent font-w600">wrok.ae</div>
 		</footer>
+
+		<script src="script.js"></script>
 	</body>
 </html>
