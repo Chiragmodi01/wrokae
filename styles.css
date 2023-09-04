@@ -74,7 +74,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	height: 3rem;
-	padding-top: 1rem;
+	padding-top: 1.5rem;
     z-index: 200;
 }
 
@@ -133,18 +133,28 @@ body {
 .hero .navbar.navbar-mobile .menu-btn-container .btn-close {
     display: none;
 }
-.hero .navbar.navbar-mobile .brand-logo-container {
+.hero .navbar .brand-logo-container .brand-wrapper{
+    text-decoration: none;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-family: "Space Grotesk", sans-serif;
 }
-.hero .navbar .brand-logo-container {
-	height: 60px;
-	width: 100px;
-	object-fit: cover;
+.hero .navbar.navbar-mobile .brand-logo-container .brand-name {
+    margin: 0;
 }
 .hero .navbar .brand-logo-container .brand-logo {
-	height: 60px;
+	height: 55px;
 	width: 100px;
 	object-fit: cover;
+}
+.hero .navbar .brand-logo-container .brand-name {
+	margin: 0;
+    font-size: 2.5rem;
 }
 .hero .nav-pills-container {
 	display: flex;
@@ -670,7 +680,7 @@ section .content-container .text-container .subheading {
 		padding-right: 4rem !important;
 	}
     section .section-10 {
-        padding: 4rem 4rem;
+        padding: 4rem 4rem !important;
     }
 	.section-5 .content-container .text-container .subheading {
 		width: 100%;
@@ -688,8 +698,8 @@ section .content-container .text-container .subheading {
 		font-size: 4rem;
 		line-height: 5rem;
 	}
-	section {
-		padding: 5rem 4rem;
+	section .section-10 {
+		padding: 5rem 4rem !important;
 		flex-wrap: wrap;
 	}
 	section .content-container {
@@ -701,26 +711,38 @@ section .content-container .text-container .subheading {
 	}
 }
 
+@media only screen and (max-width: 800px)  {
+    .hero .navbar.navbar-desktop {
+        display: none;
+    }
+    .hero .navbar.navbar-mobile {
+        display: flex;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 	:root {
 		--font-text: 1.5rem;
 		--font-heading: 2.5rem;
 	}
-    section {
-        padding: 5rem 2rem;
+    section:not(:nth-child(4)):not(:has(.section-cover))  {
+        padding: 5rem 2rem !important;
+    }
+    section:not(:nth-child(4)):not(:has(.section-cover)) .content-container {
+        padding: 0 !important;
     }
     .footer {
         padding: 5rem 2rem;
         padding-bottom: 2rem;
     }
-    section .content-container {
+    section:not(:nth-child(10)) .content-container {
         padding: 0 2rem !important;
     }
     section .section-4 .content-container{
         padding: 4rem;
     }
-    section .section-10 {
-        padding: 4rem 2rem;
+    .section-10 {
+        padding: 4rem 2rem !important;
     }
 
     section .section-10 .section-content .content-container {
@@ -741,12 +763,6 @@ section .content-container .text-container .subheading {
 	section .content-container .text-container .heading {
 		line-height: 3rem;
 	}
-    .hero .navbar.navbar-desktop {
-        display: none;
-    }
-    .hero .navbar.navbar-mobile {
-        display: flex;
-    }
 	.hero .hero-main-container .heading-container .heading {
 		font-size: 3.5rem;
 		line-height: 4.5rem;
@@ -765,6 +781,12 @@ section .content-container .text-container .subheading {
 		font-size: 2.7rem;
 		line-height: 3.5rem;
 	}
+    .form-container .input-wrapper .label-text {
+        font-size: 1.2rem;
+    }
+    .form-container .input-wrapper .input-field {
+        font-size: 0.9rem;
+    }
 	.cta-btn {
 		font-size: 1.2rem;
 	}
