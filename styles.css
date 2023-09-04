@@ -839,3 +839,16 @@ section .content-container .text-container .subheading {
 		flex-direction: column-reverse;
 	}
 }
+
+@media only screen and (max-width: 430px){
+	.hero .hero-main-container .heading-container .heading {
+		font: 2.5rem;
+		list-style: 3.5rem;
+	}
+}
+@media only screen and (max-width: 370px){
+	.hero .hero-main-container .heading-container .heading {
+		font: 2rem;
+		list-style: 3rem;
+	}
+}
