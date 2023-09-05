@@ -820,6 +820,9 @@ section .content-container .text-container .subheading {
 		padding: 5rem 2rem;
 		padding-bottom: 2rem;
 	}
+	section:not(:nth-child(10)):not(:nth-child(4)) .content-container {
+		padding: 0 2rem !important;
+	}
 	section .section-4 .content-container {
 		padding: 4rem;
 	}
