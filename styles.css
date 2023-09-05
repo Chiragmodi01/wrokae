@@ -812,6 +812,9 @@ section .content-container .text-container .subheading {
 		--font-text: 1.7rem;
 		--font-heading: 2.5rem;
 	}
+	.hero .hero-main-container .heading-container .subheading {
+		font-size: 1.6rem;
+	}
 	.section-4 .content-container, .section-1 {
 		padding: 2rem !important;
 	}
@@ -894,6 +897,9 @@ section .content-container .text-container .subheading {
 		--font-text: 1.4rem;
 		--font-heading: 2.2rem;
 	}
+	.hero .hero-main-container .heading-container .subheading {
+		font-size: 1.4rem;
+	}
 	.hero .hero-main-container .heading-container .heading {
 		font-size: 3rem;
 		line-height: 4rem;
@@ -924,6 +930,9 @@ section .content-container .text-container .subheading {
 	:root {
 		--font-text: 1.2rem;
 		--font-heading: 2rem;
+	}
+	.hero .hero-main-container .heading-container .subheading {
+		font-size: 1.2rem;
 	}
 	.section-4 .content-container .text-container .heading {
 		font-size: var(--font-heading);
