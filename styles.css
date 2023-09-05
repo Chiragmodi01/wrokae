@@ -296,6 +296,9 @@ body * {
 	justify-content: flex-end;
 	cursor: pointer;
 }
+section .actions-container .arrow-upright {
+	width: calc(var(--font-text) + 2px)
+}
 .hero .hero-main-container .actions-container .cta-signal-text {
 	color: var(--secondary);
 	font-style: italic;
