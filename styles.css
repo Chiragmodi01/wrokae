@@ -811,7 +811,7 @@ section .content-container .text-container .subheading {
 		--font-heading: 2.5rem;
 	}
 	section:not(:nth-child(4)):not(:has(.section-cover)) {
-		padding: 3rem 2rem !important;
+		/* padding: 3rem 2rem !important; */
 	}
 	section:not(:nth-child(4)):not(:has(.section-cover)) .content-container {
 		padding: 0 !important;
@@ -822,6 +822,7 @@ section .content-container .text-container .subheading {
 	}
 	section:not(:nth-child(10)):not(:nth-child(4)) .content-container {
 		padding: 0 2rem !important;
+		/* padding-right: 0 !important; */
 	}
 	section .section-4 .content-container {
 		padding: 4rem;
@@ -923,6 +924,9 @@ section .content-container .text-container .subheading {
 		--font-text: 1rem;
 		--font-heading: 2rem;
 	}
+	section {
+		padding: 3rem 0 !important;
+	}
 	section .content-container .text-container {
 		gap: 1.5rem;
 	}
@@ -934,7 +938,7 @@ section .content-container .text-container .subheading {
 		width: 100% !important;
 	}
 	section:not(:nth-child(4)):not(:has(.section-cover)) {
-		padding: 2rem !important;
+		/* padding: 3rem 2rem !important; */
 	}
 	.section-10 .form-container .cta-btn {
 		padding: 0.58em 1.5rem;
