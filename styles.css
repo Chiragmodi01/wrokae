@@ -925,6 +925,7 @@ section .content-container .text-container .subheading {
 	}
 	.section-10 .form-container .input-wrapper .input-field {
 		width: 100% !important;
+		padding: 3px 2px;
 	}
 	section .image-container .image-wrapper .section-cover {
 		width: 100% !important;
