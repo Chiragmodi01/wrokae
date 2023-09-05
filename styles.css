@@ -807,11 +807,11 @@ section .content-container .text-container .subheading {
 
 @media only screen and (max-width: 600px) {
 	:root {
-		--font-text: 1.5rem;
+		--font-text: 1.7rem;
 		--font-heading: 2.5rem;
 	}
-	section:not(:nth-child(4)):not(:has(.section-cover)) {
-		/* padding: 3rem 2rem !important; */
+	.section-4 .content-container {
+		padding: 2rem !important;
 	}
 	section:not(:nth-child(4)):not(:has(.section-cover)) .content-container {
 		padding: 0 !important;
@@ -819,10 +819,6 @@ section .content-container .text-container .subheading {
 	.footer {
 		padding: 5rem 2rem;
 		padding-bottom: 2rem;
-	}
-	section:not(:nth-child(10)):not(:nth-child(4)) .content-container {
-		padding: 0 2rem !important;
-		/* padding-right: 0 !important; */
 	}
 	section .section-4 .content-container {
 		padding: 4rem;
@@ -890,7 +886,7 @@ section .content-container .text-container .subheading {
 
 @media only screen and (max-width: 500px) {
 	:root {
-		--font-text: 1.2rem;
+		--font-text: 1.4rem;
 		--font-heading: 2.2rem;
 	}
 	.hero .hero-main-container .heading-container .heading {
@@ -921,7 +917,7 @@ section .content-container .text-container .subheading {
 
 @media only screen and (max-width: 400px){
 	:root {
-		--font-text: 1rem;
+		--font-text: 1.2rem;
 		--font-heading: 2rem;
 	}
 	.section-4 .content-container .text-container .heading {
