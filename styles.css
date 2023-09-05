@@ -810,7 +810,7 @@ section .content-container .text-container .subheading {
 		--font-text: 1.7rem;
 		--font-heading: 2.5rem;
 	}
-	.section-4 .content-container {
+	.section-4 .content-container, .section-1 {
 		padding: 2rem !important;
 	}
 	section:not(:nth-child(4)):not(:has(.section-cover)) .content-container {
