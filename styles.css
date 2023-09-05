@@ -924,8 +924,11 @@ section .content-container .text-container .subheading {
 		--font-text: 1rem;
 		--font-heading: 2rem;
 	}
-	section:not(.section-4) {
+	section {
 		padding: 3rem 0 !important;
+	}
+	.section-4 {
+		margin: 0;
 	}
 	section .content-container .text-container {
 		gap: 1.5rem;
