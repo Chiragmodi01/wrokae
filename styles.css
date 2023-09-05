@@ -924,6 +924,9 @@ section .content-container .text-container .subheading {
 		--font-text: 1rem;
 		--font-heading: 2rem;
 	}
+	.section-4 .content-container .text-container .heading {
+		font-size: var(--font-heading);
+	}
 	section {
 		padding: 3rem 0 !important;
 	}
