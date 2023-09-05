@@ -17,7 +17,13 @@ html {
 }
 body {
 	margin: 0;
+	padding: 0;
 	font-family: "Outfit", sans-serif;
+	scroll-behavior: smooth;
+}
+
+body * {
+	transition: 0.2s;
 }
 
 /* utils */
@@ -90,6 +96,9 @@ body {
 	left: 0;
 	width: 100%;
 }
+
+
+
 .menu-bg-blur {
 	height: 200vh;
 	width: 100vw;
@@ -109,11 +118,11 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 1rem 0;
+	padding: 0;
 	margin: 0;
-	background-color: white;
+	background-color: transparent;
 	overflow: hidden;
-	gap: 0.5rem 0;
+	gap:0;
 	z-index: 200;
 }
 .hero
@@ -121,7 +130,7 @@ body {
 	.ham-menu-container
 	.ham-nav-pills-container
 	.nav-pill {
-	padding: 0.8rem 2rem;
+	padding: 1rem 2rem;
 	width: 100%;
 }
 .hero
@@ -131,6 +140,13 @@ body {
 	.nav-pill:hover {
 	color: var(--primary);
 	background-color: var(--secondary);
+}
+.hero
+	.navbar.navbar-mobile
+	.ham-menu-container
+	.ham-nav-pills-container
+	.nav-pill:hover >.nav-pill-link {
+	color: var(--primary);
 }
 .hero .navbar.navbar-mobile .menu-btn-container button {
 	background: transparent;
@@ -170,9 +186,64 @@ body {
 }
 .hero .nav-pills-container .nav-pill {
 	cursor: pointer;
+	background-color: white;
 	list-style: none;
 	font-size: 1.5rem;
+	transform: translateX(-100%);
+	-webkit-animation: slide-animation 0.3s ease-in ;
+	-ms-animation: slide-animation 0.3s ease-in ;
+	-moz-animation: slide-animation 0.3s ease-in ;
+	animation: slide-animation 0.3s ease-in ;
+	animation-fill-mode: forwards ;
 }
+
+.hero .nav-pills-container .nav-pill:nth-child(2) {
+	-webkit-animation-delay: 0.1s;
+	-ms-animation-delay: 0.1s;
+	-moz-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.hero .nav-pills-container .nav-pill:nth-child(3) {
+	-webkit-animation-delay: 0.2s;
+	-ms-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+@keyframes slide-animation {
+	from {
+		transform: translateX(-100%)
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+@-webkit-keyframes slide-animation {
+	from {
+		transform: translateX(-100%)
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+@-ms-keyframes slide-animation {
+	from {
+		transform: translateX(-100%)
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+@-moz-keyframes slide-animation {
+	from {
+		transform: translateX(-100%)
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+
 .hero .nav-pills-container .nav-pill .nav-pill-link {
 	color: var(--secondary);
 	text-decoration: none;
@@ -746,7 +817,7 @@ section .content-container .text-container .subheading {
 		padding: 5rem 2rem;
 		padding-bottom: 2rem;
 	}
-	section:not(:nth-child(10)) .content-container {
+	section:not(:nth-child(10)):not(:nth-child(4)) .content-container {
 		padding: 0 2rem !important;
 	}
 	section .section-4 .content-container {
@@ -848,6 +919,18 @@ section .content-container .text-container .subheading {
 	:root {
 		--font-text: 1rem;
 		--font-heading: 2rem;
+	}
+	.section-10 .form-container .input-wrapper .input-field {
+		width: 100% !important;
+	}
+	section .image-container .image-wrapper .section-cover {
+		width: 100% !important;
+	}
+	.section-10 .form-container .cta-btn {
+		padding: 0.58em 1.5rem;
+	}
+	.section-10 .form-container .input-wrapper .input-field {
+		padding: 0.5rem 1.5rem;
 	}
 	.hero .hero-main-container .heading-container .heading {
 		font-size: 2.5rem;
