@@ -186,7 +186,6 @@ body * {
 }
 .hero .nav-pills-container .nav-pill {
 	cursor: pointer;
-	background-color: white;
 	list-style: none;
 	font-size: 1.5rem;
 	transform: translateX(-100%);
@@ -799,6 +798,9 @@ section .content-container .text-container .subheading {
 @media only screen and (max-width: 800px) {
 	.hero .navbar.navbar-desktop {
 		display: none;
+	}
+	.hero .nav-pills-container .nav-pill {
+		background-color: white;
 	}
 	.hero .navbar.navbar-mobile {
 		display: flex;
