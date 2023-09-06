@@ -271,7 +271,7 @@ body * {
 .hero .hero-main-container .heading-container .heading {
 	color: var(--secondary);
 	font-size: 5rem;
-	width: 65vw;
+	width: 90vw;
 	margin: 0;
 	margin-left: auto;
 	margin-bottom: 16px;
@@ -342,6 +342,16 @@ section .actions-container .arrow-upright {
 	height: 23rem;
 	background-color: var(--primary);
 }
+.s9 .image-bg {
+	background-color: transparent;
+}
+ .content-container .content-heading {
+	text-transform: uppercase;
+	color: var(--primary);
+	font-weight: 600;
+	font-size: var(--font-heading);
+	margin: 0;
+ }
 /* s3 */
 .s3 {
 	display: flex;
