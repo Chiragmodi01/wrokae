@@ -1046,6 +1046,9 @@ section .content-container .text-container .subheading {
 		font-size: 1.2rem;
 		margin: 0;
 	}
+	.s7.right-aligned {
+		padding-left: 2rem !important;
+	}
 }
 
 @media only screen and (max-width: 500px) {
