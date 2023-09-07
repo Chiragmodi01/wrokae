@@ -498,7 +498,7 @@ section .actions-container .arrow-upright {
 .s5 .content-container .text-container .heading {
 	text-align: right;
     font-size: calc(var(--font-heading) - 0.6rem);
-	font-weight: 300;
+	font-weight: 400;
     margin: 0;
     margin-bottom: 1rem;
 }
@@ -531,7 +531,7 @@ section .actions-container .arrow-upright {
 	margin: 0;
 	margin-left: auto;
     font-size: calc(var(--font-heading) - 0.6rem);
-	font-weight: 300;
+	font-weight: 400;
     margin-bottom: 1rem;
 }
 
@@ -767,8 +767,10 @@ section .content-container .text-container .text {
 	margin: 0;
 	color: var(--font-grey-dark);
 }
+section .content-container .text-container .text:nth-child(2) {
+	font-weight: 400;
+}
 section .actions-container {
-	margin-top: 10px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
@@ -979,7 +981,7 @@ section .content-container .text-container .subheading {
 		padding: 5rem 2rem;
 		padding-bottom: 2rem;
 	}
-	section:not(:nth-child(10)) .content-container {
+	section:not(:nth-child(10)):not(:nth-child(4)) .content-container {
 		padding: 0 2rem !important;
 	}
 	section .s4 .content-container {
@@ -1006,7 +1008,7 @@ section .content-container .text-container .subheading {
 	section .content-container .text-container .heading {
 		font-size: var(--font-heading);
 		margin: 0;
-		line-height: 4rem;
+		line-height: 3rem;
 	}
 	section .content-container .text-container .heading span {
 		font-family: 'NeueMachina-Light';
