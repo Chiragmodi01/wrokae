@@ -19,6 +19,9 @@
 	.hero .nav-pills-container .nav-pill .nav-pill-link {
 		color: var(--primary);
 	}
+	.ham-menu-container .ham-nav-pills-container .nav-pill .nav-pill-link {
+		color: var(--accent);
+	}
 	.cta-btn {
 		background-color: var(--primary);
 		color: var(--accent);
