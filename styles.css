@@ -15,14 +15,29 @@
 		--primary: #13221c;
 		--secondary: #e8efdb;
 	}
+	.hero .nav-pills-container .nav-pill .nav-pill-link {
+		color: var(--primary);
+	}
+	.cta-btn {
+		background-color: var(--primary);
+	}
+	.navbar .ham-menu-container .icon-menu.dark {
+		display: initial;
+	}
+	.navbar .ham-menu-container .icon-menu.dark {
+		display: none;
+	}
 } 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary: #e8efdb;
 		--secondary: #13221c;
 	}
-	.cta-btn {
-		background-color: var(--primary);
+	.navbar .ham-menu-container .icon-menu.light {
+		display: initial;
+	}
+	.navbar .ham-menu-container .icon-menu.dark {
+		display: none;
 	}
 } 
 @font-face {
