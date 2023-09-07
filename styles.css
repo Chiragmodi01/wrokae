@@ -32,11 +32,23 @@
 	.navbar .ham-menu-container .icon-menu.dark {
 		display: none;
 	}
+	section .actions-container .arrow-upright.light {
+		display: initial;
+	}
+	section .actions-container .arrow-upright.dark {
+		display: none;
+	}
 } 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary: #e8efdb;
 		--secondary: #13221c;
+	}
+	section .actions-container .arrow-upright.dark {
+		display: initial;
+	}
+	section .actions-container .arrow-upright.light {
+		display: none;
 	}
 	.navbar .ham-menu-container .icon-menu.light {
 		display: initial;
