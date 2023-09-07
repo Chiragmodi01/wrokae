@@ -21,6 +21,7 @@
 	}
 	.cta-btn {
 		background-color: var(--primary);
+		color: var(--accent);
 	}
 	.navbar .ham-menu-container .icon-menu.dark {
 		display: initial;
