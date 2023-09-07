@@ -14,19 +14,81 @@
 	:root {
 		--primary: #EAEFFF;
 		--secondary: #ffffff;
+		--secondary-dark: #2D2D2D;
 		--accent: #2F399D;
 		--font-grey-light: #2D2D2D;
 		--font-grey-dark: #2D2D2D;
 	}
+	.brand-name {
+		color: var(--secondary-dark);
+	}
+	.hero .hero-main-container .heading-container .heading {
+		color: var(--secondary-dark) !important;
+	}
+	.hero .hero-main-container .heading-container .heading span {
+		color: var(--accent) !important;
+	}
+	.hero .actions-container .cta-signal-text {
+		color: var(--accent) !important;
+	}
+	.hero .actions-container .cta-btn {
+		background-color: var(--accent);
+		color: var(--primary);
+	}
+	section.s1 .content-container .text-container .heading {
+		color: var(--secondary-dark);
+	}
+	section.s5 .content-container .text-container .heading {
+		color: var(--secondary-dark);
+	}
+	section.s7 .content-container .text-container .heading {
+		color: var(--secondary-dark);
+	}
+	section .content-container .content-heading {
+		color: var(--accent) !important;
+	}
+	section.s9 a {
+		color: var(--accent) !important;
+	}
 	.hero .nav-pills-container .nav-pill .nav-pill-link {
-		color: var(--secondary);
+		color: var(--secondary-dark) !important;
+	}
+	.hero .nav-pills-container .nav-pill:hover {
+		background-color: var(--accent) !important;
+	}
+	.hero .nav-pills-container .nav-pill:hover > .nav-pill-link {
+		color: var(--primary) !important;
+	}
+	section.s10 .section-content .content-container .text-container .heading{
+		color: var(--secondary-dark) !important;
+	}
+	section.s10 .section-content .content-container .text-container .subheading{
+		color: var(--secondary-dark) !important;
+	}
+	section.s10 .section-content .form-container .input-wrapper{
+		border: 1.5px solid #CDCDCD;
+	}
+	section.s10 .section-content .form-container .cta-btn{
+		color: var(--primary);
+		background-color: var(--accent);
+	}
+	section.s10 .section-content .form-container .input-wrapper .input-field::placeholder{
+		color: var(--secondary-dark);
+	}
+	section.s10 .section-content .form-container .input-wrapper .input-field{
+		color: var(--secondary-dark);
+	}
+	.hero .nav-pills-container .nav-pill .nav-pill-link {
+		color: var(--secondary-dark);
 	}
 	.ham-menu-container .ham-nav-pills-container .nav-pill .nav-pill-link {
 		color: var(--accent);
 	}
-	.cta-btn {
-		background-color: var(--primary);
-		color: var(--accent);
+	section .actions-container .arrow-upright.dark {
+		display: none;
+	}
+	section .actions-container .arrow-upright.light {
+		display: initial;
 	}
 	.navbar .ham-menu-icon .icon-menu.dark {
 		display: none;
@@ -51,6 +113,12 @@
 	:root {
 		--primary: #e8efdb;
 		--secondary: #13221c;
+	}
+	section .actions-container .arrow-upright.dark {
+		display: initial;
+	}
+	section .actions-container .arrow-upright.light {
+		display: none;
 	}
 	.wave-cutout-container .wavecut-img.light {
 		display: none;
@@ -576,6 +644,7 @@ section .actions-container .arrow-upright {
 .s9 a {
 	font-style: italic;
 	text-decoration: none;
+	font-weight: 500;
 }
 .s9 .image-container .image-wrapper {
 	display: flex;
@@ -793,7 +862,7 @@ section .actions-container {
 section .actions-container .action-redirect {
 	font-style: italic;
 	color: var(--accent);
-	font-weight: 300;
+	font-weight: 400;
 }
 section .image-container {
 	display: flex;
@@ -1031,6 +1100,17 @@ section .content-container .text-container .subheading {
 	.hero .hero-main-container .heading-container .subheading, .hero .hero-main-container .actions-container .cta-signal-text {
 		font-size: 1.5rem;
 		line-height: 2rem;
+	}
+	section.s9 .image-wrapper .aboutme-signal-text  {
+		font-weight: 500;
+	}
+	section.s9 .image-wrapper .aboutme-signal-text a{
+		font-weight: 600;
+		font-family: 'NeueMachina-Regular';
+	}
+	section.s9 .content-container .text-container .heading span  {
+		font-weight: 500;
+		font-family: 'NeueMachina-Regular';
 	}
 	.hero .hero-main-container .actions-container {
 		align-items: flex-end;
