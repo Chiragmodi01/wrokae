@@ -661,7 +661,7 @@ section .actions-container .arrow-upright {
 	font-size: var(--font-text);
 }
 .s9 .content-container .text-container .heading {
-	font-size: var(--font-heading);
+	font-size: calc(var(--font-heading) - 3px);
 	margin: 0;
 	margin-bottom: 3rem;
 }
@@ -1199,7 +1199,7 @@ section .content-container .text-container .subheading {
 	.s4 .content-container .text-container .heading {
 		font-size: var(--font-heading);
 	}
-	section:not(.s1):not(.s7) {
+	section:not(.s1):not(.s7):not(.s10) {
 		padding: 3rem 0 !important;
 	}
 	.s7.right-aligned {
