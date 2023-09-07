@@ -645,6 +645,8 @@ section .actions-container .arrow-upright {
 }
 .s10 .form-container .input-wrapper:nth-child(2) .input-field {
 	border: none;
+    font-family: "Satoshi";
+    font-weight: 500;
 	width: 100%;
 	resize: vertical;
 }
@@ -869,6 +871,9 @@ section .content-container .text-container .subheading {
 	.left-aligned {
 		padding-right: 0;
 	}
+	section.s1, section .s7 {
+		padding-right: 0 !important;
+	}
 	.footer {
 		padding: 5rem 4rem;
 		padding-bottom: 2rem;
@@ -880,6 +885,9 @@ section .content-container .text-container .subheading {
 		padding: 0;
 		padding-right: 4rem !important;
 	}
+	section {
+		padding: 5rem 4rem;
+	}
 	section .s10 {
 		padding: 4rem 4rem !important;
 	}
@@ -887,7 +895,7 @@ section .content-container .text-container .subheading {
 		width: 100%;
 	}
 	.hero {
-		padding: 0 3rem;
+		padding: 0 4rem;
 	}
 	.image-bg {
 		width: 4rem;
@@ -943,6 +951,9 @@ section .content-container .text-container .subheading {
 	}
 	.s4 .content-container {
 		padding: 2rem !important;
+	}
+	section {
+		padding: 5rem 2rem;
 	}
 	section:not(:nth-child(4)):not(:has(.section-cover)) .content-container {
 		padding: 0 !important;
@@ -1013,6 +1024,7 @@ section .content-container .text-container .subheading {
 	}
 	.s10 .form-container .input-wrapper .input-field {
 		width: auto;
+		font-size: 1.2rem;
 		margin: 0;
 	}
 }
