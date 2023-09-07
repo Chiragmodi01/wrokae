@@ -21,6 +21,9 @@
 		--primary: #e8efdb;
 		--secondary: #13221c;
 	}
+	.cta-btn {
+		background-color: var(--primary);
+	}
 } 
 @font-face {
     font-family: 'Satoshi-Light';
