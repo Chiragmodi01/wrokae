@@ -14,6 +14,7 @@
 	:root {
 		--primary: #13221c;
 		--secondary: #e8efdb;
+		--accent: #13221c;
 	}
 	.hero .nav-pills-container .nav-pill .nav-pill-link {
 		color: var(--primary);
