@@ -397,7 +397,6 @@ section .actions-container .arrow-upright {
 	font-weight: 600;
 	font-size: var(--font-heading);
 	margin: 0;
-	margin-bottom: 1rem;	
  }
 /* s3 */
 .s3 {
@@ -427,15 +426,11 @@ section .actions-container .arrow-upright {
 	width: 100%;
 }
 .s4 .content-container .text-container .heading {
-	width: 70%;
+	width: 80%;
 	text-transform: uppercase;
 	font-size: 3rem;
 	line-height: 4.5rem;
 	margin: 0;
-}
-
-.s4 .content-container .text-container .heading span {
-	font-family: 'NeueMachina-Ultrabold';
 }
 
 /* s5 */
@@ -686,7 +681,7 @@ section {
 	padding: 5rem 6rem;
 	display: flex;
 	justify-content: flex-start;
-	align-items: flex-end;
+	align-items: stretch !important;
 }
 .right-aligned:not(:nth-child(1)):not(:nth-child(7)) {
 	flex-direction: row-reverse;
@@ -696,9 +691,17 @@ section {
 	justify-content: flex-start;
 }
 section .content-container {
-	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	font-size: var(--font-text);
 	padding: 0 4rem;
+}
+section.left-aligned .content-container {
+	align-items: flex-start;
+}
+section.right-aligned .content-container {
+	align-items: flex-end;
 }
 section .content-container .text-container {
 	display: flex;
@@ -740,6 +743,7 @@ section .content-container .text-container .subheading {
 	font-size: var(--font-text);
 }
 .cta-btn {
+	text-decoration: none;
 	background-color: var(--secondary);
 	color: var(--accent);
 	font-size: 1.5rem;
@@ -766,6 +770,7 @@ section .content-container .text-container .subheading {
 	}
 	section .content-container {
 		padding: 0 6rem;
+		gap: 1.5rem;
 	}
 	.hero .hero-main-container .heading-container .heading {
 		width: 100%;
