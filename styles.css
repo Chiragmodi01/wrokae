@@ -10,6 +10,18 @@
 	--font-text: 1.75rem;
 	--font-heading: 3rem;
 }
+@media (prefers-color-scheme: light) {
+	:root {
+		--primary: #13221c;
+		--secondary: #e8efdb;
+	}
+} 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #e8efdb;
+		--secondary: #13221c;
+	}
+} 
 @font-face {
     font-family: 'Satoshi-Light';
     src: url(/assets/fonts/Satoshi/Satoshi-Light.otf);
