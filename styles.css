@@ -79,6 +79,19 @@ body * {
 	color: var(--accent);
 }
 
+.font-light {
+	font-family: "Satoshi-Light";
+}
+.font-regular {
+	font-family: "Satoshi-Regular";
+}
+.font-medium {
+	font-family: "Satoshi-Medium";
+}
+.font-bold {
+	font-family: "Satoshi-Bold";
+}
+
 .font-w100 {
 	font-weight: 100;
 }
@@ -275,6 +288,7 @@ body * {
 .hero .nav-pills-container .nav-pill .nav-pill-link {
 	color: var(--secondary);
 	text-decoration: none;
+	font-weight: 500;
 }
 .hero .hero-main-container {
 	display: flex;
@@ -300,9 +314,10 @@ body * {
 .hero .hero-main-container .heading-container .heading {
 	color: var(--secondary);
 	font-size: 5rem;
-	width: 65vw;
+	width: 70vw;
 	margin: 0;
 	margin-left: auto;
+	font-weight: normal;
 	margin-bottom: 16px;
 	line-height: 6rem;
 }
@@ -341,18 +356,20 @@ section .actions-container .arrow-upright {
 	justify-content: flex-end;
 }
 .s1 .content-container {
+	font-family: "Satoshi-Light";
 	text-align: right;
 	padding-right: 0;
-	width: 70%;
+	width: 60%;
 }
 .s1 .content-container .text-container .subheading {
 	width: 80%;
 }
 .s1 .content-container .text-container .heading {
+	margin: 0;
 	margin-left: auto;
 }
 .s1 .content-container .text-container .heading span {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "NeueMachina-Regular";
 }
 .s1 .content-container .text-container .text {
 	margin-left: auto;
@@ -380,6 +397,7 @@ section .actions-container .arrow-upright {
 	font-weight: 600;
 	font-size: var(--font-heading);
 	margin: 0;
+	margin-bottom: 1rem;	
  }
 /* s3 */
 .s3 {
@@ -415,8 +433,9 @@ section .actions-container .arrow-upright {
 	line-height: 4.5rem;
 	margin: 0;
 }
+
 .s4 .content-container .text-container .heading span {
-	font-family: "NeueMachina-Ultrabold";
+	font-family: 'NeueMachina-Ultrabold';
 }
 
 /* s5 */
@@ -435,6 +454,10 @@ section .actions-container .arrow-upright {
 }
 .s5 .content-container .text-container .heading {
 	text-align: right;
+	font-size: var(--font-heading);
+	font-weight: 300;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 .s5 .content-container .text-container .subheading {
 	width: 80%;
@@ -464,6 +487,9 @@ section .actions-container .arrow-upright {
 .s7 .content-container .text-container .heading {
 	margin: 0;
 	margin-left: auto;
+	font-size: var(--font-heading);
+	font-weight: 300;
+    margin-bottom: 1rem;
 }
 
 /* s8 */
@@ -513,6 +539,9 @@ section .actions-container .arrow-upright {
 	margin: 0;
 	margin-bottom: 3rem;
 }
+.s9 .content-container .text-container span{
+	font-family: 'NeueMachina-Light';
+}
 .s9
 	.content-container
 	.text-container
@@ -537,18 +566,21 @@ section .actions-container .arrow-upright {
 	height: 100%;
 }
 .s10 .content-container {
-	margin-bottom: 4rem;
+	margin-bottom: rem;
 	padding-left: 0;
 	width: 60%;
 }
 .s10 .content-container .text-container .heading {
 	text-transform: uppercase;
+	margin: 0;
+    font-size: var(--font-heading);
 }
 .s10 .content-container .text-container .subheading {
 	margin: 0;
 }
 .s10 .form-container {
 	text-transform: uppercase;
+	width: 85%;
 }
 .s10 .form-container .input-wrapper {
 	padding: 5px;
@@ -557,12 +589,15 @@ section .actions-container .arrow-upright {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2rem;
+	gap: 1rem;
 	margin-bottom: 2rem;
 }
+.s10 .form-container .input-wrapper:nth-child(1) {
+	justify-content: flex-start;
+}
 .s10 .form-container .input-wrapper:nth-child(2) {
-	flex-direction: column;
 	align-items: flex-start;
+	flex-direction: column;
 }
 .s10 .form-container .input-wrapper .input-field {
 	background-color: transparent;
@@ -582,6 +617,7 @@ section .actions-container .arrow-upright {
 .s10 .form-container .input-wrapper:nth-child(2) .input-field {
 	border: none;
 	width: 100%;
+	resize: vertical;
 }
 .s10 .form-container .label-text {
 	font-size: 1.5rem;
@@ -668,7 +704,7 @@ section .content-container .text-container {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 2.5rem;
+	gap: 1rem;
 }
 section .action-redirect {
 	text-decoration: none;
@@ -700,11 +736,6 @@ section .image-container .image-wrapper .section-cover {
 	background: var(--primary);
 	object-fit: cover;
 }
-section .content-container .text-container .heading {
-	font-size: var(--font-heading);
-	margin: 0;
-	line-height: 4rem;
-}
 section .content-container .text-container .subheading {
 	font-size: var(--font-text);
 }
@@ -718,6 +749,7 @@ section .content-container .text-container .subheading {
 	border: none;
 	cursor: pointer;
 	text-transform: uppercase;
+	font-family: "Satoshi-Medium";
 }
 .cta-btn :hover {
 	opacity: 80%;
@@ -784,6 +816,9 @@ section .content-container .text-container .subheading {
 	}
 	.s10 .content-container {
 		width: 75%;
+	}
+	.s10 .form-container {
+		width: 100%;
 	}
 }
 
@@ -906,11 +941,13 @@ section .content-container .text-container .subheading {
 		padding: 0 2rem;
 	}
 	section .content-container .text-container .heading {
-		line-height: 3rem;
+		font-size: var(--font-heading);
+		margin: 0;
+		line-height: 4rem;
 	}
-	.hero .hero-main-container .heading-container .heading {
-		font-size: 3.5rem;
-		line-height: 4.5rem;
+	section .content-container .text-container .heading span {
+		font-family: 'NeueMachina-Light';
+		font-weight: normal;
 	}
 	.hero .hero-main-container .heading-container .subheading, .hero .hero-main-container .actions-container .cta-signal-text {
 		font-size: 1.5rem;
