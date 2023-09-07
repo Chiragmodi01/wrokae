@@ -361,8 +361,8 @@
 					<form
 						class="form-container"
 						enctype="text/plain"
-						method="post"
-						id="contact-form"
+						method="POST"
+						id="sheetdb-form"
 						action="mailto:xyz@gmail.com"
 					>
 						<div class="input-wrapper">
@@ -371,11 +371,11 @@
 							>
 							<input
 								required
+								name="data[email]"
 								class="input-field"
 								type="text"
 								placeholder="xyz@gmail.com"
 								id="user-email"
-								name="user-email"
 							/>
 						</div>
 						<div class="input-wrapper">
@@ -383,15 +383,15 @@
 								>How can we help</label
 							>
 							<textarea
+								name="data[description]"
 								rows="4" 
 								required
 								class="input-field"
 								id="user-email"
 								placeholder="type here..."
-								name="user-email"
 							></textarea>
 						</div>
-						<button class="cta-btn" type="submit">Contact</button>
+						<button id="btn-submit" class="cta-btn" type="submit">Contact</button>
 					</form>
 				</div>
 			</section>

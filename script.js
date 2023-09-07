@@ -24,6 +24,24 @@ function toggleOnMenu() {
     }
 }
 
+var form = document.getElementById('sheetdb-form');
+var btnSubmit = document.getElementById('btn-submit');
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  fetch(form.action, {
+      method : "POST",
+      body: new FormData(document.getElementById("sheetdb-form")),
+  }).then(
+      response => response.json()
+  ).then((html) => {
+    btnSubmit.innerText('SUBMITTED')
+    form.reset()
+    setTimeout(() => {
+        btnSubmit.innerText('CONTACT')
+    }, 1500)
+  });
+});
+
 
 function toggleOffMenu() {
     const menuContainers = document.getElementsByClassName("ham-nav-pills-container");
