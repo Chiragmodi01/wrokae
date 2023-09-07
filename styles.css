@@ -596,8 +596,13 @@ section .actions-container .arrow-upright {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
 	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	font-family: "Satoshi";
+    font-weight: 500;
+}
+.s10 .form-container .input-wrapper .input-field::placeholder{
+	color: var(--accent);
 }
 .s10 .form-container .input-wrapper:nth-child(1) {
 	justify-content: flex-start;
@@ -609,14 +614,12 @@ section .actions-container .arrow-upright {
 .s10 .form-container .input-wrapper .input-field {
 	background-color: transparent;
 	border: none;
-	border-bottom: 1px solid var(--primary);
-	margin-left: 1rem;
 	outline: none;
 	color: var(--primary);
 	padding: 3px 2px;
 	padding-top: 0;
+	font-size: 1.5rem;
 	width: 17rem;
-	font-size: 1.3rem;
 }
 .s10 .form-container .input-wrapper:nth-child(2) .input-field {
 	margin-left: 0;
@@ -625,10 +628,6 @@ section .actions-container .arrow-upright {
 	border: none;
 	width: 100%;
 	resize: vertical;
-}
-.s10 .form-container .label-text {
-	font-size: 1.5rem;
-	font-weight: 400;
 }
 .s10 .image-wrapper img {
 	width: 20rem;
@@ -980,11 +979,8 @@ section .content-container .text-container .subheading {
 		font-size: 2.7rem;
 		line-height: 3.5rem;
 	}
-	.form-container .input-wrapper .label-text {
-		font-size: 1.2rem;
-	}
 	.form-container .input-wrapper .input-field {
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 	}
 	.cta-btn {
 		font-size: 1.2rem;
