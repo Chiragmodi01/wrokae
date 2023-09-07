@@ -12,12 +12,12 @@
 }
 @media (prefers-color-scheme: light) {
 	:root {
-		--primary: #EAEFFF;
+		--primary: #eaefff;
 		--secondary: #ffffff;
-		--secondary-dark: #2D2D2D;
-		--accent: #2F399D;
-		--font-grey-light: #2D2D2D;
-		--font-grey-dark: #2D2D2D;
+		--secondary-dark: #2d2d2d;
+		--accent: #2f399d;
+		--font-grey-light: #2d2d2d;
+		--font-grey-dark: #2d2d2d;
 	}
 	.brand-name {
 		color: var(--secondary-dark);
@@ -59,23 +59,27 @@
 	.hero .nav-pills-container .nav-pill:hover > .nav-pill-link {
 		color: var(--primary) !important;
 	}
-	section.s10 .section-content .content-container .text-container .heading{
+	section.s10 .section-content .content-container .text-container .heading {
 		color: var(--secondary-dark) !important;
 	}
-	section.s10 .section-content .content-container .text-container .subheading{
+	section.s10 .section-content .content-container .text-container .subheading {
 		color: var(--secondary-dark) !important;
 	}
-	section.s10 .section-content .form-container .input-wrapper{
-		border: 1.5px solid #CDCDCD;
+	section.s10 .section-content .form-container .input-wrapper {
+		border: 1.5px solid #cdcdcd;
 	}
-	section.s10 .section-content .form-container .cta-btn{
+	section.s10 .section-content .form-container .cta-btn {
 		color: var(--primary);
 		background-color: var(--accent);
 	}
-	section.s10 .section-content .form-container .input-wrapper .input-field::placeholder{
+	section.s10
+		.section-content
+		.form-container
+		.input-wrapper
+		.input-field::placeholder {
 		color: var(--secondary-dark);
 	}
-	section.s10 .section-content .form-container .input-wrapper .input-field{
+	section.s10 .section-content .form-container .input-wrapper .input-field {
 		color: var(--secondary-dark);
 	}
 	.hero .nav-pills-container .nav-pill .nav-pill-link {
@@ -108,7 +112,7 @@
 	.wave-cutout-container .wavecut-img.dark {
 		display: none;
 	}
-} 
+}
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary: #e8efdb;
@@ -138,35 +142,35 @@
 	.navbar .ham-menu-icon .icon-menu.dark {
 		display: initial;
 	}
-} 
-@font-face {
-    font-family: 'Satoshi-Light';
-    src: url(/assets/fonts/Satoshi/Satoshi-Light.otf);
 }
 @font-face {
-    font-family: 'Satoshi-Regular';
-    src: url(/assets/fonts/Satoshi/Satoshi-Regular.otf);
+	font-family: "Satoshi-Light";
+	src: url(/assets/fonts/Satoshi/Satoshi-Light.otf);
 }
 @font-face {
-    font-family: 'Satoshi-Medium';
-    src: url(/assets/fonts/Satoshi/Satoshi-Medium.otf);
+	font-family: "Satoshi-Regular";
+	src: url(/assets/fonts/Satoshi/Satoshi-Regular.otf);
 }
 @font-face {
-    font-family: 'Satoshi-Bold';
-    src: url(/assets/fonts/Satoshi/Satoshi-Bold.otf);
+	font-family: "Satoshi-Medium";
+	src: url(/assets/fonts/Satoshi/Satoshi-Medium.otf);
+}
+@font-face {
+	font-family: "Satoshi-Bold";
+	src: url(/assets/fonts/Satoshi/Satoshi-Bold.otf);
 }
 
 @font-face {
-    font-family: 'NeueMachina-Light';
-    src: url(/assets/fonts/NeueMachina/NeueMachina-Light.otf);
+	font-family: "NeueMachina-Light";
+	src: url(/assets/fonts/NeueMachina/NeueMachina-Light.otf);
 }
 @font-face {
-    font-family: 'NeueMachina-Regular';
-    src: url(/assets/fonts/NeueMachina/NeueMachina-Regular.otf);
+	font-family: "NeueMachina-Regular";
+	src: url(/assets/fonts/NeueMachina/NeueMachina-Regular.otf);
 }
 @font-face {
-    font-family: 'NeueMachina-Ultrabold';
-    src: url(/assets/fonts/NeueMachina/NeueMachina-Ultrabold.otf);
+	font-family: "NeueMachina-Ultrabold";
+	src: url(/assets/fonts/NeueMachina/NeueMachina-Ultrabold.otf);
 }
 
 /* reset */
@@ -176,7 +180,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-    font-family: 'Satoshi';
+	font-family: "Satoshi";
 	scroll-behavior: smooth;
 }
 
@@ -268,8 +272,6 @@ body * {
 	width: 100%;
 }
 
-
-
 .menu-bg-blur {
 	height: 200vh;
 	width: 100vw;
@@ -294,7 +296,7 @@ body * {
 	margin: 0;
 	background-color: transparent;
 	overflow: hidden;
-	gap:0;
+	gap: 0;
 	z-index: 200;
 }
 .hero
@@ -317,7 +319,8 @@ body * {
 	.navbar.navbar-mobile
 	.ham-menu-container
 	.ham-nav-pills-container
-	.nav-pill:hover >.nav-pill-link {
+	.nav-pill:hover
+	> .nav-pill-link {
 	color: var(--primary);
 }
 .hero .navbar.navbar-mobile .menu-btn-container button {
@@ -361,11 +364,11 @@ body * {
 	list-style: none;
 	font-size: 1.5rem;
 	transform: translateX(-100%);
-	-webkit-animation: slide-animation 0.3s ease-in ;
-	-ms-animation: slide-animation 0.3s ease-in ;
-	-moz-animation: slide-animation 0.3s ease-in ;
-	animation: slide-animation 0.3s ease-in ;
-	animation-fill-mode: forwards ;
+	-webkit-animation: slide-animation 0.3s ease-in;
+	-ms-animation: slide-animation 0.3s ease-in;
+	-moz-animation: slide-animation 0.3s ease-in;
+	animation: slide-animation 0.3s ease-in;
+	animation-fill-mode: forwards;
 }
 
 .hero .nav-pills-container .nav-pill:nth-child(2) {
@@ -384,7 +387,7 @@ body * {
 
 @keyframes slide-animation {
 	from {
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
 	to {
 		transform: translateX(0%);
@@ -392,7 +395,7 @@ body * {
 }
 @-webkit-keyframes slide-animation {
 	from {
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
 	to {
 		transform: translateX(0%);
@@ -400,7 +403,7 @@ body * {
 }
 @-ms-keyframes slide-animation {
 	from {
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
 	to {
 		transform: translateX(0%);
@@ -408,7 +411,7 @@ body * {
 }
 @-moz-keyframes slide-animation {
 	from {
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
 	to {
 		transform: translateX(0%);
@@ -470,7 +473,7 @@ body * {
 	cursor: pointer;
 }
 section .actions-container .arrow-upright {
-	width: calc(var(--font-text) + 2px)
+	width: calc(var(--font-text) + 2px);
 }
 .hero .hero-main-container .actions-container .cta-signal-text {
 	color: var(--secondary);
@@ -521,13 +524,13 @@ section .actions-container .arrow-upright {
 .s9 .image-bg {
 	background-color: transparent;
 }
- .content-container .content-heading {
+.content-container .content-heading {
 	text-transform: uppercase;
 	color: var(--primary);
 	font-weight: 600;
 	font-size: var(--font-heading);
 	margin: 0;
- }
+}
 /* s3 */
 .s3 {
 	display: flex;
@@ -579,10 +582,10 @@ section .actions-container .arrow-upright {
 }
 .s5 .content-container .text-container .heading {
 	text-align: right;
-    font-size: calc(var(--font-heading) - 0.6rem);
+	font-size: calc(var(--font-heading) - 0.6rem);
 	font-weight: 400;
-    margin: 0;
-    margin-bottom: 1rem;
+	margin: 0;
+	margin-bottom: 1rem;
 }
 .s5 .content-container .text-container .subheading {
 	width: 80%;
@@ -612,9 +615,9 @@ section .actions-container .arrow-upright {
 .s7 .content-container .text-container .heading {
 	margin: 0;
 	margin-left: auto;
-    font-size: calc(var(--font-heading) - 0.6rem);
+	font-size: calc(var(--font-heading) - 0.6rem);
 	font-weight: 400;
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 /* s8 */
@@ -665,14 +668,10 @@ section .actions-container .arrow-upright {
 	margin: 0;
 	margin-bottom: 3rem;
 }
-.s9 .content-container .text-container span{
-	font-family: 'NeueMachina-Light';
+.s9 .content-container .text-container span {
+	font-family: "NeueMachina-Light";
 }
-.s9
-	.content-container
-	.text-container
-	.subheading-container
-	.subheading {
+.s9 .content-container .text-container .subheading-container .subheading {
 	margin: 0;
 }
 
@@ -699,7 +698,7 @@ section .actions-container .arrow-upright {
 .s10 .content-container .text-container .heading {
 	text-transform: uppercase;
 	margin: 0;
-    font-size: var(--font-heading);
+	font-size: var(--font-heading);
 }
 .s10 .content-container .text-container .subheading {
 	margin: 0;
@@ -718,9 +717,9 @@ section .actions-container .arrow-upright {
 	margin-bottom: 2rem;
 	font-size: 1.5rem;
 	font-family: "Satoshi";
-    font-weight: 500;
+	font-weight: 500;
 }
-.s10 .form-container .input-wrapper .input-field::placeholder{
+.s10 .form-container .input-wrapper .input-field::placeholder {
 	color: var(--accent);
 }
 .s10 .form-container .input-wrapper:nth-child(1) {
@@ -745,8 +744,8 @@ section .actions-container .arrow-upright {
 }
 .s10 .form-container .input-wrapper:nth-child(2) .input-field {
 	border: none;
-    font-family: "Satoshi";
-    font-weight: 500;
+	font-family: "Satoshi";
+	font-weight: 500;
 	width: 100%;
 	resize: vertical;
 }
@@ -1013,7 +1012,8 @@ section .content-container .text-container .subheading {
 		padding: 5rem 4rem !important;
 		flex-wrap: wrap;
 	}
-	section .s1, section .s7 {
+	section .s1,
+	section .s7 {
 		padding: 5rem 4rem !important;
 	}
 	.s10 .content-container {
@@ -1046,9 +1046,10 @@ section .content-container .text-container .subheading {
 		--font-heading: 2.5rem;
 	}
 	section .s1 .content-container {
-	    padding: 0 !important;
+		padding: 0 !important;
 	}
-	.hero .hero-main-container .heading-container .subheading, .hero .hero-main-container .actions-container .cta-signal-text {
+	.hero .hero-main-container .heading-container .subheading,
+	.hero .hero-main-container .actions-container .cta-signal-text {
 		font-size: 1.6rem;
 	}
 	.s4 .content-container {
@@ -1057,7 +1058,8 @@ section .content-container .text-container .subheading {
 	section {
 		padding: 5rem 2rem;
 	}
-	section:not(:nth-child(4)):not(:nth-child(5)):not(:has(.section-cover)) .content-container {
+	section:not(:nth-child(4)):not(:nth-child(5)):not(:has(.section-cover))
+		.content-container {
 		padding: 0 !important;
 	}
 	.footer {
@@ -1094,23 +1096,24 @@ section .content-container .text-container .subheading {
 		line-height: 3rem;
 	}
 	section .content-container .text-container .heading span {
-		font-family: 'NeueMachina-Light';
+		font-family: "NeueMachina-Light";
 		font-weight: normal;
 	}
-	.hero .hero-main-container .heading-container .subheading, .hero .hero-main-container .actions-container .cta-signal-text {
+	.hero .hero-main-container .heading-container .subheading,
+	.hero .hero-main-container .actions-container .cta-signal-text {
 		font-size: 1.5rem;
 		line-height: 2rem;
 	}
-	section.s9 .image-wrapper .aboutme-signal-text  {
+	section.s9 .image-wrapper .aboutme-signal-text {
 		font-weight: 500;
 	}
-	section.s9 .image-wrapper .aboutme-signal-text a{
+	section.s9 .image-wrapper .aboutme-signal-text a {
 		font-weight: 600;
-		font-family: 'NeueMachina-Regular';
+		font-family: "NeueMachina-Regular";
 	}
-	section.s9 .content-container .text-container .heading span  {
+	section.s9 .content-container .text-container .heading span {
 		font-weight: 500;
-		font-family: 'NeueMachina-Regular';
+		font-family: "NeueMachina-Regular";
 	}
 	.hero .hero-main-container .actions-container {
 		align-items: flex-end;
@@ -1156,7 +1159,8 @@ section .content-container .text-container .subheading {
 	.s7 .content-container .text-container .heading {
 		line-height: 3rem;
 	}
-	.hero .hero-main-container .heading-container .subheading, .hero .hero-main-container .actions-container .cta-signal-text {
+	.hero .hero-main-container .heading-container .subheading,
+	.hero .hero-main-container .actions-container .cta-signal-text {
 		font-size: 1.4rem;
 	}
 	.hero .hero-main-container .heading-container .heading {
@@ -1185,7 +1189,7 @@ section .content-container .text-container .subheading {
 	}
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
 	:root {
 		--font-text: 1.2rem;
 		--font-heading: 2rem;
@@ -1229,7 +1233,7 @@ section .content-container .text-container .subheading {
 		line-height: 3.5rem;
 	}
 }
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 370px) {
 	.hero .hero-main-container .heading-container .heading {
 		font-size: 2rem;
 		line-height: 3rem;
