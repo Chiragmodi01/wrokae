@@ -12,9 +12,11 @@
 }
 @media (prefers-color-scheme: light) {
 	:root {
-		--primary: #13221c;
-		--secondary: #e8efdb;
-		--accent: #13221c;
+		--primary: #EAEFFF;
+		--secondary: #ffffff;
+		--accent: #2F399D;
+		--font-grey-light: #2D2D2D;
+		--font-grey-dark: #2D2D2D;
 	}
 	.hero .nav-pills-container .nav-pill .nav-pill-link {
 		color: var(--secondary);
@@ -38,11 +40,23 @@
 	section .actions-container .arrow-upright.dark {
 		display: none;
 	}
+	.wave-cutout-container .wavecut-img.light {
+		display: initial;
+	}
+	.wave-cutout-container .wavecut-img.dark {
+		display: none;
+	}
 } 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary: #e8efdb;
 		--secondary: #13221c;
+	}
+	.wave-cutout-container .wavecut-img.light {
+		display: none;
+	}
+	.wave-cutout-container .wavecut-img.dark {
+		display: initial;
 	}
 	section .actions-container .arrow-upright.dark {
 		display: initial;
