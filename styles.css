@@ -888,9 +888,6 @@ section .content-container .text-container .subheading {
 	.left-aligned {
 		padding-right: 0;
 	}
-	section.s1, section .s7 {
-		padding-right: 0 !important;
-	}
 	.footer {
 		padding: 5rem 4rem;
 		padding-bottom: 2rem;
@@ -901,6 +898,9 @@ section .content-container .text-container .subheading {
 	.s5 .content-container {
 		padding: 0;
 		padding-right: 4rem !important;
+	}
+	section .s5 {
+		padding-right: 2rem !important;
 	}
 	section {
 		padding: 5rem 4rem;
@@ -960,8 +960,8 @@ section .content-container .text-container .subheading {
 		--font-text: 1.7rem;
 		--font-heading: 2.5rem;
 	}
-	section .s1, section .s7 {
-		padding: 5rem 2rem !important;
+	section .s1 .content-container {
+	    padding: 0 !important;
 	}
 	.hero .hero-main-container .heading-container .subheading, .hero .hero-main-container .actions-container .cta-signal-text {
 		font-size: 1.6rem;
@@ -972,14 +972,14 @@ section .content-container .text-container .subheading {
 	section {
 		padding: 5rem 2rem;
 	}
-	section:not(:nth-child(4)):not(:has(.section-cover)) .content-container {
+	section:not(:nth-child(4)):not(:nth-child(5)):not(:has(.section-cover)) .content-container {
 		padding: 0 !important;
 	}
 	.footer {
 		padding: 5rem 2rem;
 		padding-bottom: 2rem;
 	}
-	section:not(:nth-child(10)):not(:nth-child(4)) .content-container {
+	section:not(:nth-child(10)) .content-container {
 		padding: 0 2rem !important;
 	}
 	section .s4 .content-container {
@@ -1050,6 +1050,9 @@ section .content-container .text-container .subheading {
 	:root {
 		--font-text: 1.4rem;
 		--font-heading: 2.2rem;
+	}
+	.s5 .content-container .text-container .heading {
+		line-height: 3.5rem;
 	}
 	.hero .hero-main-container .heading-container .subheading, .hero .hero-main-container .actions-container .cta-signal-text {
 		font-size: 1.4rem;
