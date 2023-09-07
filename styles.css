@@ -17,7 +17,7 @@
 		--accent: #13221c;
 	}
 	.hero .nav-pills-container .nav-pill .nav-pill-link {
-		color: var(--primary);
+		color: var(--secondary);
 	}
 	.ham-menu-container .ham-nav-pills-container .nav-pill .nav-pill-link {
 		color: var(--accent);
@@ -192,6 +192,7 @@ body * {
 	height: 200vh;
 	width: 100vw;
 	opacity: 50%;
+	filter: blur(1);
 	position: absolute;
 	background-color: var(--primary);
 	display: none;
