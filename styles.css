@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap");
 
 :root {
@@ -10,6 +10,35 @@
 	--font-text: 1.75rem;
 	--font-heading: 3rem;
 }
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url(/assets/fonts/Satoshi/Satoshi-Light.otf);
+}
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url(/assets/fonts/Satoshi/Satoshi-Regular.otf);
+}
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url(/assets/fonts/Satoshi/Satoshi-Medium.otf);
+}
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url(/assets/fonts/Satoshi/Satoshi-Bold.otf);
+}
+
+@font-face {
+    font-family: 'NeueMachina-Light';
+    src: url(/assets/fonts/NeueMachina/NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: 'NeueMachina-Regular';
+    src: url(/assets/fonts/NeueMachina/NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: 'NeueMachina-Ultrabold';
+    src: url(/assets/fonts/NeueMachina/NeueMachina-Ultrabold.otf);
+}
 
 /* reset */
 html {
@@ -18,7 +47,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Outfit", sans-serif;
+    font-family: 'Satoshi';
 	scroll-behavior: smooth;
 }
 
@@ -166,7 +195,7 @@ body * {
 	gap: 1rem;
 	text-transform: uppercase;
 	color: var(--secondary);
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "NeueMachina-Ultrabold";
 }
 .hero .navbar.navbar-mobile .brand-logo-container .brand-name {
 	margin: 0;
@@ -271,14 +300,14 @@ body * {
 .hero .hero-main-container .heading-container .heading {
 	color: var(--secondary);
 	font-size: 5rem;
-	width: 90vw;
+	width: 65vw;
 	margin: 0;
 	margin-left: auto;
 	margin-bottom: 16px;
 	line-height: 6rem;
 }
 .hero .hero-main-container .heading-container .heading span {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "NeueMachina-Regular";
 }
 .hero .hero-main-container .heading-container .subheading {
 	color: var(--font-grey-light);
@@ -387,7 +416,7 @@ section .actions-container .arrow-upright {
 	margin: 0;
 }
 .s4 .content-container .text-container .heading span {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "NeueMachina-Ultrabold";
 }
 
 /* s5 */
